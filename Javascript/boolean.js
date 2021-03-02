@@ -34,3 +34,5 @@ console.log(!!('' || null || 0 || 'epa' || 123))
 let nome = ''
 
 console.log(nome || 'Desconhecido')
+
+
