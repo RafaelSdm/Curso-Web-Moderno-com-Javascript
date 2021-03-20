@@ -1,0 +1,4 @@
+function potencia(base, expoente){
+
+}
+
