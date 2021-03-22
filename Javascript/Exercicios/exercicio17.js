@@ -5,16 +5,16 @@
 function novoSalario(plano, salario){
     switch (plano) {
         case 'A':
-            salario = salario + (salario * 10/100)
+            salario = salario + (salario * (10/100))
             console.log(`Novo salario de R$: ${salario}`)
             
             break;
         case 'B':
-            salario = salario +(salario * 15/100)
+            salario = salario +(salario * (15/100))
             console.log(`Novo salario de R$: ${salario}`)
             break;
         case 'C':
-            salario = salario +(salario * 20/100 );
+            salario = salario +(salario * (20/100 ));
             console.log(`Novo salario de R$: ${salario}`)
             break;
     
