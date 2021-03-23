@@ -4,12 +4,12 @@ function avaliacao(n1,n2,n3, codAluno){
     let media =0;
 
     if(n1 >= n2 &&n1 >= n3 ){
-        media = (n1*4 + n2 * 3 + n3 *3) / 3;
+        media = (n1*4 + n2 * 3 + n3 *3) / 10;
     }else if(n2 >= n1 && n2 >= n3 ){
-        media = (n2*4 + n1*3 + n3 *3) / 3;
+        media = (n2*4 + n1*3 + n3 *3) / 10;
     
     }else{
-        media = (n3 *4 + n1*3 + n2*3) /(3);
+        media = (n3 *4 + n1*3 + n2*3) /10;
     }
 
 
@@ -27,4 +27,4 @@ function avaliacao(n1,n2,n3, codAluno){
     }
 }
 
-avaliacao(6,6,6,100)
+avaliacao(5,3.5,7,100)
