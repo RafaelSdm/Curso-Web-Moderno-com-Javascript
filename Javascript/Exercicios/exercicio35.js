@@ -2,35 +2,46 @@
 
 
 
-function palavras(vetor1, vetor2){
+function palavras(vetor1, vetor2,tam,tam2){
 
-    let contador = 1;
+    let contador = 0;
     let l =0;
     let k =0;
 
-    for(var i =1;i<vetor1.length; i++){
+    for(var i =0;i<tam; i++){
 
         if(i >=1){
 
-             l = i +1
+             l = l + 1 
 
         }else{
-             l =0;
+             l = 0;
         }
         
-        for(var j =1; j<vetor1.length;j++){
+        for(var j =0; j< tam2;j++){
 
             if(j >=1){
-                k = j +1;
+                k = k +1;
             }else{
-                k =0;
+                k = 0;
             }
+
+
 
             let letra1 = vetor1.substr(l,1)
             let letra2 = vetor2.substr(k,1)
 
+           
+
             if(letra1.toUpperCase() == letra2.toUpperCase()){
                 contador++;
+                j = tam
+                
+
+            }else{
+
+
+
 
             }
         }
@@ -40,11 +51,11 @@ function palavras(vetor1, vetor2){
 
   
 
-    if((contador) == (vetor1.length)){
-        return `Sao iguais ${contador}`;
+    if(contador == tam && contador == tam2){
+        return `As palavras informadas são semelhantes`;
 
     }else{
-        return `Sao diferentes  ${contador}`;
+        return `As palavras informadas não são semelhantes`;
         
     }
 
@@ -55,21 +66,16 @@ function palavras(vetor1, vetor2){
 
 
 
-let vetor1 = 'berbardo';
-let vetor2 = 'berbardo';
+let vetor1 = 'testando';
+let vetor2 = 'testaNDO';
 let tam = vetor1.length;
+let tam2 = vetor2.length;
  
 
-let manga = vetor2.substr(0,1);
-
-//console.log(vetor1.toUpperCae().substr(5,1))
+console.log(palavras(vetor1,vetor2,tam,tam2));
 
 
 
-//console.log(manga.toUpperCase())
-
-console.log(palavras(vetor1,vetor2));
-console.log(vetor1.length)
 
 
 

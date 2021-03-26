@@ -2,10 +2,19 @@
 
 
 function adiconar(inicio, fim){
-    for(leti =0;i< v)
+    for(let i =0;i<= inicio.length;i++){
+        inicio.push(fim[i])
+    }
+
+    for(let j =0;j<= fim.length;j++){
+        console.log(fim[i])
+    }
 }
 
 
 
 let vetorP = [1,2,3,4,5]
 let vetorA = [6,7,8,9,10];
+
+
+adiconar(vetorP, vetorA)
